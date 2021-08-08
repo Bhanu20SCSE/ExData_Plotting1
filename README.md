@@ -56,6 +56,9 @@ Date/Time classes in R using the `strptime()` and `as.Date()`
 functions.
 
 * Note that in this dataset missing values are coded as `?`.
+Datos=read.csv("D:\Bhanu\PHDCW\RME703\Data Set\household_power_consumption.txt", sep=";", header=T)
+Datos$Date<-as.Date(Datos$Date,format='%d/%m/%Y')
+head(Datos$Date)
 
 
 ## Making Plots
